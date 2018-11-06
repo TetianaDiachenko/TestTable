@@ -1,0 +1,21 @@
+<!-- Первый вариант таблички без плагина -->
+<table>
+    <thead>
+      <tr>
+        <th>Color name</th>
+        <th>Color</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let color of colors">
+        <td>{{ color.colorName }}</td>
+        <td>{{ color.hexValue }}</td>
+      </tr>
+    </tbody>
+</table>
+
+<!-- Второй вариант таблички с плагином ng2-smart-table-->
+<ng2-smart-table 
+    [settings]="settings" 
+    [source]="colors">
+</ng2-smart-table>
