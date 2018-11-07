@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TableService } from './table.service';
-import { Table } from './Table';
 
 @Component({
   selector: 'app-table',
