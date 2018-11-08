@@ -5,10 +5,21 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class TableService {
-
+	
+  constructor(private http: HttpClient) { }
+   url = 'http://localhost:4000';
+  	getColors() {
+    return this
+            .http
+            .get(`${this.url}/colorsArray`);
+        };
   
 }
-const source_data = '[{"colorName": "red","hexValue": "#f00"},{"colorName": "green","hexValue": "#0f0"},{"colorName": "blue","hexValue": "#00f"},{"colorName": "cyan","hexValue": "#0ff"},{"colorName": "magenta","hexValue": "#f0f"},{"colorName": "yellow","hexValue": "#ff0"},{"colorName": "black","hexValue": "#000"}]',
+
+
+/*  Example of the table on Js(pure)*/
+
+/*const source_data = '[{"colorName": "red","hexValue": "#f00"},{"colorName": "green","hexValue": "#0f0"},{"colorName": "blue","hexValue": "#00f"},{"colorName": "cyan","hexValue": "#0ff"},{"colorName": "magenta","hexValue": "#f0f"},{"colorName": "yellow","hexValue": "#ff0"},{"colorName": "black","hexValue": "#000"}]',
 data_obj = JSON.parse(source_data);
 
 let data_table = '';
@@ -24,3 +35,4 @@ for (const index in data_obj) {
 }
 
 document.body.innerHTML = data_table;
+*/

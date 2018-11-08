@@ -38,7 +38,7 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
+              "extractCSS": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -118,5 +118,10 @@
       }
     }
   },
-  "defaultProject": "table"
+  "defaultProject": "table",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

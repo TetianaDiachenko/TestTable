@@ -1,0 +1,32 @@
+.table {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  width: 60%;
+  margin:  0 auto 30px auto; 
+
+  thead {
+    font-size: 16px;
+    color: #fff;
+    background-color: #3a96f3;
+    text-align: center;
+   } 
+   tr {
+    height: 30px;
+
+    th:nth-child(1) {
+      width: 40%;
+    }
+    th:nth-child(2) {
+      width: 60%;
+    }
+  }
+  tbody {
+    background-color: #e9f2fb;
+    text-transform: uppercase;
+
+    tr td {
+      height: 25px; 
+    }
+  }  
+
+}
